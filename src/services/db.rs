@@ -8,6 +8,7 @@ use mongodb::{
 use std::{str::FromStr, time::SystemTime};
 use crate::models::{booking_model::{Booking, FullBooking}, dog_model::Dog, owner_model::Owner};
 
+#[derive(Debug)]
 pub struct Database {
     pub booking: Collection<Booking>,
     pub owner: Collection<Owner>,
